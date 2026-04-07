@@ -9,6 +9,6 @@
       settings.PasswordAuthentication = false;
       settings.PermitRootLogin = "no";
     };
-    # programs.ssh.startAgent = true;
+    programs.ssh.startAgent = true;
   };
 }
