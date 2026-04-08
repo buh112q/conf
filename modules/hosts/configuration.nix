@@ -75,6 +75,7 @@
       nixd
       micro
       git
+      nh
     ];
     nixpkgs.config.allowUnfree = true;
     system.stateVersion = "25.11";
