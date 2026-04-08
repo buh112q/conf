@@ -3,7 +3,6 @@
   inputs,
   ...
 }: {
-  # This is your system configuration entry-point
   flake.nixosConfigurations.nixos = inputs.nixpkgs.lib.nixosSystem {
     modules = with self.nixosModules; [
       nixosHardware
@@ -13,8 +12,6 @@
       ssh
     ];
   };
-  # This is your configuration.nix, a place where you configure your system
-  # You can place it in a separate file.
   flake.nixosModules.nixosModule = {pkgs, ...}: {
     boot = {
       loader.systemd-boot.enable = true;
@@ -28,10 +25,11 @@
         "splash"
       ];
     };
-    networking.hostName = "nixos";
-    networking.networkmanager.enable = true;
-    networking.firewall.enable = false;
-
+    networking ={
+      hostName = "nixos";
+      networkmanager.enable = true;
+      firewall.enable = false;
+    };
     time.timeZone = "Asia/Bangkok";
     i18n.defaultLocale = "en_US.UTF-8";
     fonts.packages = with pkgs; [
@@ -39,7 +37,6 @@
       noto-fonts-cjk-sans
       nerd-fonts.jetbrains-mono
     ];
-    # hardware host
     zramSwap.enable = true;
     hardware = {
       graphics.enable = true;
@@ -51,7 +48,6 @@
       power-profiles-daemon.enable = true;
       upower.enable = true;
     };
-    # flatpak
     services.flatpak.enable = true;
 
     services.pulseaudio.enable = false;
