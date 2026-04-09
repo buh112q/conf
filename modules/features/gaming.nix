@@ -11,7 +11,9 @@
         proton-ge-bin
       ];
     };
-      gamemode.enable = true;
+      gamemode = {
+        enable = true;
+      };
       gamescope = {
         enable = true;
         # capSysNice = true;
