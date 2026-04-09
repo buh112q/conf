@@ -75,6 +75,12 @@
     };
     programs.git = {
       enable = true;
+      config = {
+        user = {
+          name = "buh112q";
+          email = "lnwpoom.zaa123@gmail.com";
+        };
+      };
     };
     users.users.sock = {
       shell = pkgs.zsh;
