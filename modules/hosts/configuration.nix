@@ -49,7 +49,10 @@
       upower.enable = true;
     };
     services.flatpak.enable = true;
-
+    programs.appimage ={
+      enable = true;
+      binfmt = true;
+    };
     services.pulseaudio.enable = false;
     security.rtkit.enable = true;
     services.pipewire = {
