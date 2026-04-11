@@ -91,6 +91,7 @@
       extraGroups = [
         "wheel"
         "networkmanager"
+        "gamemode"
       ];
       packages = with pkgs; [];
     };
