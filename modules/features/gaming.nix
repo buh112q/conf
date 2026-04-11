@@ -19,7 +19,7 @@
         # capSysNice = true;
       };
     };
-    environment.systemPackages = with pkg1s; [
+    environment.systemPackages = with pkgs; [
       prismlauncher
       goverlay
       heroic

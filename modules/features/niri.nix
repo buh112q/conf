@@ -36,7 +36,6 @@
       wl-clipboard
       ghostty
       nautilus
-      librewolf
       localsend
       vscodium-fhs
     ];
