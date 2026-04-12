@@ -7,6 +7,7 @@
     modules = with self.nixosModules; [
       nixosHardware
       nixosModule
+      fonts
       gaming
       niri
       ssh
@@ -93,7 +94,6 @@
       alejandra
       nixd
       micro
-      jujutsu
     ];
     nixpkgs.config.allowUnfree = true;
     system.stateVersion = "25.11";

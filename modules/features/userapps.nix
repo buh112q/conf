@@ -5,6 +5,7 @@
 }: {
   flake.nixosModules.apps = {pkgs, ...}: {
     environment.systemPackages = with pkgs; [
+      ripgrep
       btop
       fzf
       duf
@@ -14,6 +15,7 @@
       gearlever
       localsend
       fastfetch
+      jujutsu
     ];
   };
 }
