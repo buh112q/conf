@@ -63,15 +63,6 @@
       alsa.support32Bit = true;
       wireplumber.enable = true;
     };
-    programs.fish = {
-      enable = true;
-    };
-    programs.zsh = {
-      enable = true;
-      enableCompletion = true;
-      autosuggestions.enable = true;
-      syntaxHighlighting.enable = true;
-    };
     programs.nh = {
       enable = true;
       clean = {
@@ -88,6 +79,9 @@
           email = "lnwpoom.zaa123@gmail.com";
         };
       };
+    };
+    programs.fish = {
+      enable = true;
     };
     users.users.sock = {
       shell = pkgs.fish;
