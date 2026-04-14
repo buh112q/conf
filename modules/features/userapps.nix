@@ -11,6 +11,7 @@
       duf
       tree
       bat
+      bitwarden-desktop
       vscodium-fhs
       gearlever
       localsend
