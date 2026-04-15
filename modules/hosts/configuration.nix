@@ -77,6 +77,7 @@
     };
     programs.fish = {
       enable = true;
+      useBabelfish = true;
     };
     users.users.sock = {
       shell = pkgs.fish;
@@ -88,7 +89,6 @@
       ];
       packages = with pkgs; [];
     };
-    nix.nixPath = ["nixpkgs=${inputs.nixpkgs}"];
     environment.systemPackages = with pkgs; [
       alejandra
       nixd
