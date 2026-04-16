@@ -5,8 +5,8 @@
 }: {
   flake.nixosModules.apps = {pkgs, ...}: {
     environment.systemPackages = with pkgs; [
+      btop-rocm
       ripgrep
-      btop
       fzf
       duf
       tree
