@@ -7,6 +7,7 @@
     modules = with self.nixosModules; [
       nixosHardware
       nixosModule
+      flatpak
       fonts
       gaming
       niri
@@ -45,7 +46,6 @@
       power-profiles-daemon.enable = true;
       upower.enable = true;
     };
-    services.flatpak.enable = true;
     programs.appimage = {
       binfmt = true;
       enable = true;
