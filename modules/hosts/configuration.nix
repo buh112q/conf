@@ -47,8 +47,8 @@
     };
     services.flatpak.enable = true;
     programs.appimage = {
-      enable = true;
       binfmt = true;
+      enable = true;
     };
     services.pulseaudio.enable = false;
     security.rtkit.enable = true;

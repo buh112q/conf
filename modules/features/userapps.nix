@@ -13,7 +13,6 @@
       bat
       bitwarden-desktop
       vscodium-fhs
-      gearlever
       localsend
       fastfetch
       jujutsu
