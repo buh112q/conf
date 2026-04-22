@@ -17,8 +17,11 @@
   };
   flake.nixosModules.nixosModule = {pkgs, ...}: {
     boot = {
-      loader.systemd-boot.enable = true;
-      loader.efi.canTouchEfiVariables = true;
+      loader ={
+        timeout = 0;
+        systemd-boot.enable = true;
+        efi.canTouchEfiVariables = true;
+      };
       kernelPackages = pkgs.linuxPackages_zen;
       kernelModules = [
         "ntsync"
