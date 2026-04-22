@@ -7,6 +7,7 @@
     programs = {
       steam = {
       enable = true;
+      protontricks.enable = true;
       extraCompatPackages = with pkgs; [
         proton-ge-bin
       ];
@@ -26,7 +27,6 @@
     environment.sessionVariables = {
       # Set maximum cache size (e.g., 4G, 10G, or 'unlimited')
       MESA_SHADER_CACHE_MAX_SIZE = "12G";
-    };
-    
+    };    
   };
 }
