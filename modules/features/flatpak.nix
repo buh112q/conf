@@ -15,7 +15,6 @@
 			  onCalendar = "weekly"; # Default value
 			};
 			packages = [
-				"com.github.Matoking.protontricks"
 				"com.github.tchx84.Flatseal"
 				"it.mijorus.gearlever"
 			];
