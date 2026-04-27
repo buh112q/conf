@@ -17,15 +17,18 @@
             style = "dark";
           };
           options = {
-            tabstop = 3;
-            shiftwidth = 3;
+            tabstop = 2;
+            shiftwidth = 2;
             expandtab = true;
           };
           extraPackages = with pkgs; [
             nixd
             alejandra
           ];
-          clipboard.providers.wl-copy.enable = true;
+          clipboard = {
+            enable = true;
+            registers = "unnamedplus";
+          };
           binds.whichKey.enable = true;
           statusline.lualine.enable = true;
           telescope.enable = true;
