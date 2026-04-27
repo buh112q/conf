@@ -8,12 +8,12 @@
       nixosHardware
       nixosModule
       flatpak
-      fonts
       gaming
+      fonts
+      ssh
       # niri-dms
       niri-noctalia
       nvf
-      ssh
       apps
     ];
   };
@@ -64,7 +64,6 @@
       alsa.support32Bit = true;
       wireplumber.enable = true;
     };
-    programs.nix-index.enable = true;
     programs.nh = {
       enable = true;
       clean = {
@@ -97,8 +96,7 @@
     };
     environment.systemPackages = with pkgs; [
       micro
-      neovim
-      comma
+      vim
     ];
     nixpkgs.config.allowUnfree = true;
     system.stateVersion = "25.11";
