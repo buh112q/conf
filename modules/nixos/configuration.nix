@@ -12,6 +12,7 @@
       gaming
       # niri-dms
       niri-noctalia
+      nvf
       ssh
       apps
     ];

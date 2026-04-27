@@ -12,16 +12,16 @@
 		        user = "sock";
 		      };
 		    };
-		    programs.niri.enable = true;
-		    programs.dconf.enable = true;
-		    services.udisks2.enable = true;
-		    services.gvfs.enable = true;	
+		programs.niri.enable = true;
+		programs.dconf.enable = true;
+		services.udisks2.enable = true;
+		services.gvfs.enable = true;	
 		environment.systemPackages = with pkgs; [
 		      xwayland-satellite
 		      wl-clipboard
 		      noctalia-shell
 		      nautilus
 		      kitty
-		    ];
+		];
 	};
-}
+   }	
