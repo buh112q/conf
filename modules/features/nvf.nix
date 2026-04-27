@@ -17,14 +17,16 @@
             style = "dark";
           };
           options = {
-            tabstop = 2;
-            shiftwidth = 2;
+            tabstop = 3;
+            shiftwidth = 3;
             expandtab = true;
           };
           extraPackages = with pkgs; [
             nixd
             alejandra
           ];
+          clipboard.providers.wl-copy.enable = true;
+          binds.whichKey.enable = true;
           statusline.lualine.enable = true;
           telescope.enable = true;
           autocomplete.nvim-cmp.enable = true;
