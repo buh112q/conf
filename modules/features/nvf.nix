@@ -23,9 +23,9 @@
 					statusline.lualine.enable = true;
 					telescope.enable = true;
 					autocomplete.nvim-cmp.enable = true;
-
-					languages = {
-						enableLSP = true;
+				        lsp.enable = true;
+					
+                                        languages = {
                                                 enableFormat = true;
 						enableTreesitter = true;
 
@@ -33,11 +33,12 @@
                                                         enable = true;
                                                         format = {
                                                                 enable = true;
-                                                                type = "alejandra";
-                                                        };
-                                                        lsp = {
-                                                                enable = true;
-                                                                servers = [ "nixd" ];
+                                                                type =
+                                                                        ["alejandra"];
+                                                                        formatOnSave = true; 
+                                                        }; lsp = { enable =
+                                                                true;
+                                                                servers = ["nixd"];
                                                         };
                                                 };
 					};
