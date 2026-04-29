@@ -8,8 +8,9 @@
       fontDir.enable = true;
       enableDefaultPackages = true;
       packages = with pkgs; [
-        nerd-fonts.jetbrains-mono
         noto-fonts
+        noto-fonts-cjk-sans
+        nerd-fonts.jetbrains-mono
       ];
       fontconfig = {
         defaultFonts = {
