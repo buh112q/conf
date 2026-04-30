@@ -13,7 +13,6 @@
       bat
       bitwarden-desktop
       mission-center
-      vscodium-fhs
       localsend
       fastfetch
       jujutsu
